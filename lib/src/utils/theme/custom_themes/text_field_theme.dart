@@ -3,28 +3,28 @@ import 'package:cabu_cabu_user_mobile/src/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class TTextFieldTheme {
-  TTextFieldTheme._();
+class AppTextFieldTheme {
+  AppTextFieldTheme._();
 
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: AppColors.darkGrey,
+    prefixIconColor: AppColors.opacBlack,
     suffixIconColor: AppColors.darkGrey,
-    contentPadding: const EdgeInsets.symmetric(
-      vertical: AppSizes.inputFieldPadding,
+    contentPadding: EdgeInsets.symmetric(
+      vertical: AppSizes.inputFieldPadding.h,
       horizontal: AppSizes.inputFieldPadding,
     ),
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(AppSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: AppColors.grey),
+      borderSide: const BorderSide(width: 1, color: AppColors.opacBlack),
     ),
     enabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(AppSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: AppColors.grey),
+      borderSide: const BorderSide(width: 1, color: AppColors.opacBlack),
     ),
     focusedBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(AppSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: AppColors.dark),
+      borderSide: const BorderSide(width: 1, color: AppColors.primary),
     ),
     errorBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(AppSizes.inputFieldRadius),
@@ -42,7 +42,7 @@ class TTextFieldTheme {
       fontSize: AppSizes.fontMd.sp,
     ),
     hintStyle: const TextStyle().copyWith(
-      color: AppColors.black,
+      color: AppColors.opacBlack,
       fontSize: AppSizes.fontSm.sp,
     ),
   );

@@ -1,4 +1,4 @@
-import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/screens/onborading.dart';
+import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/screens/signup_screen.dart';
 import 'package:cabu_cabu_user_mobile/src/utils/constants/texts.dart';
 import 'package:cabu_cabu_user_mobile/src/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -14,9 +14,9 @@ class AppView extends StatelessWidget {
       builder: (_, __) => MaterialApp(
         title: AppTexts.appName,
         theme: AppTheme.lightTheme,
-        darkTheme: AppTheme.darkTheme,
+        // darkTheme: AppTheme.darkTheme,
         debugShowCheckedModeBanner: false,
-        home: const OnboradingScreen(),
+        home: const SignupScreen(),
       ),
     );
   }

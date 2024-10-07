@@ -12,30 +12,38 @@ class AppTexts {
   static const String skip = 'Skip';
 
   // -- Authentication --
-  static const String loginTitle = 'Welcome to Trend Style Store';
-  static const String loginSubTitle = 'Sign in to Continue';
-  static const String email = 'E-Mail';
+  static const String loginTitle = 'SIGN IN';
+  static const String loginSubTitle =
+      'Welcome back to Cabu Cabu,\nyour next ride awaits you.';
+  static const String email = 'Your email or phone number';
   static const String password = 'Password';
+  static const String confirmPassword = 'Confirm Password';
   static const String remember = 'Remember Me';
   static const String forgotPassword = 'Forgot Password?';
+  static const String alreadyHaveAccount = 'Already have an account?';
   static const String login = 'LOGIN';
+  static const String signin = 'Sign in';
   static const String signup = 'SIGN UP';
   static const String orSignInWith = 'Or Sign In With';
   static const String orSignUpWith = 'Or Sign Up With';
-  static const String signupTitle = 'Let\'s create your account';
+  static const String signupTitle = 'SIGN UP';
+  static const String signupSubTitle =
+      'Welcome to Cabu Cabu,\nyour destination for comfort.';
+
+  static const String continueWithGoogle = 'Continue with Google';
 
   static const String firstName = 'First Name';
   static const String lastName = 'Last Name';
   static const String userName = 'Username';
   static const String phoneNumber = 'Phone Number';
 
-  static const String iAgreeTo = 'I agree to';
+  static const String iAgreeTo = 'By signing up, you agree to our';
   static const String tContinue = 'Continue';
   static const String submit = 'Submit';
   static const String done = 'Done';
   static const String and = 'and';
-  static const String privacyPolicy = 'Privacy Policy';
-  static const String termsOfUse = 'Terms of use';
+  static const String privacyPolicy = 'privacy policy';
+  static const String termsOfServices = 'terms of services';
   static const String verificationCode = 'verificationcode';
   static const String resendEmail = 'Resend Email';
   static const String resendEmailIn = 'Resend email in';

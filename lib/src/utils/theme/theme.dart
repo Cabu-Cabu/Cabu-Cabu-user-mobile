@@ -1,6 +1,10 @@
 import 'package:cabu_cabu_user_mobile/src/utils/constants/colors.dart';
+import 'package:cabu_cabu_user_mobile/src/utils/theme/custom_themes/appbar_theme.dart';
+import 'package:cabu_cabu_user_mobile/src/utils/theme/custom_themes/checkbox_theme.dart';
 import 'package:cabu_cabu_user_mobile/src/utils/theme/custom_themes/elevated_button_theme.dart';
 import 'package:cabu_cabu_user_mobile/src/utils/theme/custom_themes/outlined_button_theme.dart';
+import 'package:cabu_cabu_user_mobile/src/utils/theme/custom_themes/text_field_theme.dart';
+import 'package:cabu_cabu_user_mobile/src/utils/theme/custom_themes/text_theme.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {
@@ -12,14 +16,14 @@ class AppTheme {
     fontFamily: 'Montserrat',
     brightness: Brightness.light,
     primaryColor: AppColors.primary,
-    // textTheme: TTextTheme.lightTextTheme,
+    textTheme: AppTextTheme.lightTextTheme,
     // chipTheme: TChipTheme.lightChipTheme,
-    // scaffoldBackgroundColor: Colors.white,
-    // appBarTheme: TAppBarTheme.lightAppBarTheme,
-    // checkboxTheme: TCheckBoxTheme.lightCheckBoxTheme,
+    scaffoldBackgroundColor: Colors.white,
+    appBarTheme: AAppBarTheme.lightAppBarTheme,
+    checkboxTheme: AppCheckBoxTheme.lightCheckBoxTheme,
     // bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
     outlinedButtonTheme: AppOutlinedButtonTheme.outlinedButtonTheme,
-    // inputDecorationTheme: TTextFieldTheme.lightInputDecorationTheme,
+    inputDecorationTheme: AppTextFieldTheme.lightInputDecorationTheme,
     elevatedButtonTheme: AppElevatedButtonTheme.lightElevatedThemeData,
   );
 
@@ -29,14 +33,14 @@ class AppTheme {
     fontFamily: 'Montserrat',
     brightness: Brightness.dark,
     primaryColor: AppColors.primary,
-    // textTheme: TTextTheme.darkTextTheme,
+    textTheme: AppTextTheme.darkTextTheme,
     // chipTheme: TChipTheme.darkChipTheme,
-    // scaffoldBackgroundColor: TColors.dark,
-    // appBarTheme: TAppBarTheme.darkAppBarTheme,
-    // checkboxTheme: TCheckBoxTheme.darkCheckBoxTheme,
+    scaffoldBackgroundColor: AppColors.dark,
+    appBarTheme: AAppBarTheme.darkAppBarTheme,
+    checkboxTheme: AppCheckBoxTheme.darkCheckBoxTheme,
     // bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
     outlinedButtonTheme: AppOutlinedButtonTheme.outlinedButtonThemeDark,
-    // inputDecorationTheme: TTextFieldTheme.darkInputDecorationTheme,
+    inputDecorationTheme: AppTextFieldTheme.darkInputDecorationTheme,
     elevatedButtonTheme: AppElevatedButtonTheme.darkElevatedThemeData,
   );
 }

@@ -52,7 +52,7 @@ class AppColors {
   );
 
   // Neutral Shades
-  // static const Color black = Color(0xFF000000);
+  static const Color opacBlack = Color(0x62000000);
   static const Color black = Color(0xFF232323);
   static const Color dark = Color(0xFF0C0F14);
   static const Color darkerGrey = Color(0xFF212121);

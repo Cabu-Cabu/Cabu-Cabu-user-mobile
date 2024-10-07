@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
-class TAppBarTheme {
-  TAppBarTheme._();
+class AAppBarTheme {
+  AAppBarTheme._();
 
   static AppBarTheme lightAppBarTheme = AppBarTheme(
     elevation: 0,
     centerTitle: false,
     scrolledUnderElevation: 0,
+    shadowColor: Colors.transparent,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
     iconTheme: const IconThemeData(color: Colors.black, size: 24),

@@ -86,7 +86,7 @@ class AppSizes {
   static const double inputFieldRadius = 12.0;
   static const double inputFieldHeight = 48.0;
   static const double spaceBtwInputFields = 16.0;
-  static const double inputFieldPadding = 16.0;
+  static const double inputFieldPadding = 20.0;
   static const double inputFieldIconSize = 24.0;
 
   // Card sizes

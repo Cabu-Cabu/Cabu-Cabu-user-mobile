@@ -1,3 +1,5 @@
+import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/screens/login_screen.dart';
+import 'package:cabu_cabu_user_mobile/src/utils/constants/extentions.dart';
 import 'package:cabu_cabu_user_mobile/src/utils/constants/image_strings.dart';
 import 'package:cabu_cabu_user_mobile/src/utils/constants/sizes.dart';
 import 'package:cabu_cabu_user_mobile/src/utils/constants/texts.dart';
@@ -37,7 +39,14 @@ class WelcomeScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () => context.push(const LoginScreen()),
+                  style: context.outlinedButtonTheme.style?.copyWith(
+                    textStyle: WidgetStateProperty.all(
+                      TextStyle(
+                        color: context.colorScheme.onSurface,
+                      ),
+                    ),
+                  ),
                   child: const Text(AppTexts.signup),
                 ),
               ),

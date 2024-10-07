@@ -18,7 +18,7 @@ class AppElevatedButtonTheme {
       side: const BorderSide(color: AppColors.primary),
       padding: EdgeInsets.symmetric(vertical: 24.h),
       textStyle: TextStyle(
-          fontSize: 18.sp, color: AppColors.white, fontWeight: FontWeight.w400),
+          fontSize: 16.sp, color: AppColors.white, fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
     ),
   );
@@ -35,7 +35,7 @@ class AppElevatedButtonTheme {
       side: const BorderSide(color: AppColors.primary),
       padding: EdgeInsets.symmetric(vertical: 24.h),
       textStyle: TextStyle(
-          fontSize: 18.sp, color: Colors.white, fontWeight: FontWeight.w600),
+          fontSize: 16.sp, color: Colors.white, fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
     ),
   );

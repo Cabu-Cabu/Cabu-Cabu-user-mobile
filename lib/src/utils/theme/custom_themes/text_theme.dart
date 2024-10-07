@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class TTextTheme {
-  TTextTheme._();
+class AppTextTheme {
+  AppTextTheme._();
 
   static TextTheme lightTextTheme = TextTheme(
       headlineLarge: const TextStyle().copyWith(
-          fontSize: 32.sp, fontWeight: FontWeight.bold, color: Colors.black),
+          fontSize: 24.sp, fontWeight: FontWeight.bold, color: Colors.black),
       headlineMedium: const TextStyle().copyWith(
           fontSize: 24.sp, fontWeight: FontWeight.w600, color: Colors.black),
       headlineSmall: const TextStyle().copyWith(
-          fontSize: 18.sp, fontWeight: FontWeight.w600, color: Colors.black),
+          fontSize: 18.sp, fontWeight: FontWeight.w400, color: Colors.black),
       titleLarge: const TextStyle().copyWith(
           fontSize: 16.0.sp, fontWeight: FontWeight.w600, color: Colors.black),
       titleMedium: const TextStyle().copyWith(
@@ -34,7 +34,7 @@ class TTextTheme {
 
   static TextTheme darkTextTheme = TextTheme(
       headlineLarge: const TextStyle().copyWith(
-        fontSize: 32.sp,
+        fontSize: 24.sp,
         fontWeight: FontWeight.bold,
         color: Colors.white,
       ),
@@ -44,7 +44,7 @@ class TTextTheme {
         color: Colors.white,
       ),
       headlineSmall: const TextStyle().copyWith(
-          fontSize: 18.sp, fontWeight: FontWeight.w600, color: Colors.white),
+          fontSize: 18.sp, fontWeight: FontWeight.w400, color: Colors.white),
       titleLarge: const TextStyle().copyWith(
           fontSize: 16.0.sp, fontWeight: FontWeight.w600, color: Colors.white),
       titleMedium: const TextStyle().copyWith(
