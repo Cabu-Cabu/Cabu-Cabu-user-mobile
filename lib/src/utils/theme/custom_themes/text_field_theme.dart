@@ -10,10 +10,10 @@ class TTextFieldTheme {
     errorMaxLines: 3,
     prefixIconColor: AppColors.darkGrey,
     suffixIconColor: AppColors.darkGrey,
-    // contentPadding: EdgeInsets.symmetric(
-    //   vertical: AppSizes.inputFieldPaddingV,
-    //   horizontal: AppSizes.inputFieldPaddingH,
-    // ),
+    contentPadding: const EdgeInsets.symmetric(
+      vertical: AppSizes.inputFieldPadding,
+      horizontal: AppSizes.inputFieldPadding,
+    ),
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(AppSizes.inputFieldRadius),
       borderSide: const BorderSide(width: 1, color: AppColors.grey),

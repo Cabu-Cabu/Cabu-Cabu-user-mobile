@@ -1,7 +1,7 @@
 // This class contains all the Images path in String format.
 
-class TImages {
-  TImages._();
+class AppImages {
+  AppImages._();
 
   // -- App Logos --
   static const String lightAppLogo = 'assets/logos/light_logo.png';
@@ -12,8 +12,7 @@ class TImages {
   static const String facebookLogo = 'assets/logos/facebook_logo.png';
 
   // -- Onboarding Images --
-  static const String onboarding1 =
-      'assets/images/onboarding_images/sammy-line-searching.gif';
+  static const String onboardingImage = 'assets/images/onboarding.png';
   static const String onboarding2 =
       'assets/images/onboarding_images/sammy-line-shopping.gif';
   static const String onboarding3 =

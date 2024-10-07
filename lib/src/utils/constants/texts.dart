@@ -1,23 +1,13 @@
-class TTexts {
-  TTexts._();
+class AppTexts {
+  AppTexts._();
 
   // -- General --
-  static const String appName = 'App Name';
+  static const String appName = 'Cabu Cabu';
   static const String appDescription = 'App Description';
   static const String appVersion = 'App Version';
 
   // -- Onboarding --
-  static const String onboardingTitle1 = 'Choose Your Style';
-  static const String onboardingDescription1 =
-      'Welcome to a World of Limitless Choices - Your Perfect Style is Just a Click Away!';
-
-  static const String onboardingTitle2 = 'Select Your Payment Method';
-  static const String onboardingDescription2 =
-      'Fast, Secure, and Convenient Payment Options - Choose the One that Suits You Best!';
-
-  static const String onboardingTitle3 = 'Deliver At Your Doorstep';
-  static const String onboardingDescription3 =
-      'From Our Store to Your Door - Shop from the Comfort of Your Home!';
+  static const String getStarted = 'GET STARTED';
 
   static const String skip = 'Skip';
 
@@ -28,8 +18,8 @@ class TTexts {
   static const String password = 'Password';
   static const String remember = 'Remember Me';
   static const String forgotPassword = 'Forgot Password?';
-  static const String signin = 'Sign In';
-  static const String createAccount = 'Create Account';
+  static const String login = 'LOGIN';
+  static const String signup = 'SIGN UP';
   static const String orSignInWith = 'Or Sign In With';
   static const String orSignUpWith = 'Or Sign Up With';
   static const String signupTitle = 'Let\'s create your account';

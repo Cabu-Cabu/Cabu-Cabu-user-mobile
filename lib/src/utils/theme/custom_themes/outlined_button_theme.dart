@@ -1,21 +1,23 @@
+import 'package:cabu_cabu_user_mobile/src/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class TOutlinedButtonTheme {
-  TOutlinedButtonTheme._();
+class AppOutlinedButtonTheme {
+  AppOutlinedButtonTheme._();
 
   static OutlinedButtonThemeData outlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.black,
       side: const BorderSide(color: Colors.grey),
-      textStyle: const TextStyle(
-        fontSize: 16,
+      textStyle: TextStyle(
+        fontSize: 18.sp,
         fontWeight: FontWeight.w600,
         color: Colors.black,
       ),
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 24.h),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(10),
       ),
     ),
   );
@@ -25,15 +27,15 @@ class TOutlinedButtonTheme {
     style: OutlinedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.white,
-      side: const BorderSide(color: Colors.grey),
-      textStyle: const TextStyle(
-        fontSize: 16,
+      side: const BorderSide(color: AppColors.primary),
+      textStyle: TextStyle(
+        fontSize: 18.sp,
         fontWeight: FontWeight.w600,
         color: Colors.white,
       ),
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 24.h),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(10),
       ),
     ),
   );
