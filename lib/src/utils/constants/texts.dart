@@ -24,6 +24,7 @@ class AppTexts {
   static const String login = 'LOGIN';
   static const String signin = 'Sign in';
   static const String signup = 'SIGN UP';
+  static const String finish = 'FINISH';
   static const String orSignInWith = 'Or Sign In With';
   static const String orSignUpWith = 'Or Sign Up With';
   static const String signupTitle = 'SIGN UP';
@@ -32,10 +33,22 @@ class AppTexts {
 
   static const String continueWithGoogle = 'Continue with Google';
 
-  static const String firstName = 'First Name';
-  static const String lastName = 'Last Name';
+  // -- Forgot Password --
+  static const String enterEmail = 'Enter your email address';
+  static const String verifyEmail = 'Verify email';
+
+  static const String verificationCode = 'Verification code';
+  static const String verify = 'Verify';
+  static const String emailAddress = 'Cabu-Cabu@express.com';
+
+  static const String newPassword = 'New password';
+  static const String reEnterPassword = 'Re-enter password';
+  static const String confirm = 'Confirm';
+
+  static const String name = 'Name';
   static const String userName = 'Username';
   static const String phoneNumber = 'Phone Number';
+  static const String location = 'location';
 
   static const String iAgreeTo = 'By signing up, you agree to our';
   static const String tContinue = 'Continue';
@@ -44,12 +57,11 @@ class AppTexts {
   static const String and = 'and';
   static const String privacyPolicy = 'privacy policy';
   static const String termsOfServices = 'terms of services';
-  static const String verificationCode = 'verificationcode';
   static const String resendEmail = 'Resend Email';
   static const String resendEmailIn = 'Resend email in';
 
   // -- Authentication Headings Text
-  static const String forgotPasswordTitle = 'Forgot password';
+  static const String forgotPasswordTitle = 'FORGOT PASSWORD';
   static const String forgotPasswordSubTitle =
       'Don\'t worry sometimes people can forget too, enter your email and we will send you a password reset link.';
   static const String changeYourPasswordTitle = 'Password Reset Email Sent';

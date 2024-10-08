@@ -1,3 +1,4 @@
+import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/screens/change_password_screen.dart';
 import 'package:cabu_cabu_user_mobile/src/utils/constants/colors.dart';
 import 'package:cabu_cabu_user_mobile/src/utils/constants/extentions.dart';
 import 'package:cabu_cabu_user_mobile/src/utils/constants/texts.dart';
@@ -47,7 +48,7 @@ class SigninForm extends StatelessWidget {
               ],
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () => context.push(const ChangePasswordScreen()),
               child: Text(
                 AppTexts.forgotPassword,
                 style: context.textTheme.titleSmall?.copyWith(

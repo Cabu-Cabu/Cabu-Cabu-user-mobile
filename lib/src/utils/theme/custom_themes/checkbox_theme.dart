@@ -19,6 +19,7 @@ class AppCheckBoxTheme {
     }),
     // side: const BorderSide(color: Colors.lightGreen, width: 2),
     shape: const CircleBorder(),
+    visualDensity: VisualDensity.compact,
   );
 
   static CheckboxThemeData darkCheckBoxTheme = CheckboxThemeData(
@@ -36,5 +37,6 @@ class AppCheckBoxTheme {
     }),
     // side: const BorderSide(color: Colors.lightGreen, width: 2),
     shape: const CircleBorder(),
+    visualDensity: VisualDensity.compact,
   );
 }

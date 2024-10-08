@@ -39,7 +39,7 @@ class WelcomeScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
-                  onPressed: () => context.push(const LoginScreen()),
+                  onPressed: () => context.push(const SigninScreen()),
                   style: context.outlinedButtonTheme.style?.copyWith(
                     textStyle: WidgetStateProperty.all(
                       TextStyle(

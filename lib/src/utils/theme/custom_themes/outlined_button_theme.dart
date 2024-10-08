@@ -15,7 +15,7 @@ class AppOutlinedButtonTheme {
         fontWeight: FontWeight.w600,
         color: Colors.black,
       ),
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 24.h),
+      padding: const EdgeInsets.all(20),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
       ),
@@ -33,7 +33,7 @@ class AppOutlinedButtonTheme {
         fontWeight: FontWeight.w600,
         color: Colors.white,
       ),
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 24.h),
+      padding: const EdgeInsets.all(20),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
       ),
