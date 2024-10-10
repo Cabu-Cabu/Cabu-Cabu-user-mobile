@@ -12,11 +12,23 @@ class AppImages {
   static const String facebookLogo = 'assets/logos/facebook_logo.png';
 
   // -- Onboarding Images --
-  static const String onboardingImage = 'assets/images/onboarding.png';
+  static const String onboardingImage =
+      'assets/images/onboarding/onboarding.png';
   static const String onboarding2 =
       'assets/images/onboarding_images/sammy-line-shopping.gif';
   static const String onboarding3 =
       'assets/images/onboarding_images/sammy-line-delivery.gif';
+
+  // -- Home Images --
+  static const String home1 = 'assets/images/home_images/cab_stand.png';
+  static const String home2 = 'assets/images/home_images/taxi_car.png';
+  static const String home3 =
+      'assets/images/home_images/friends_playing_video.png';
+
+  // -- Places Images --
+  static const String place1 = 'assets/images/places/places.png';
+  static const String place2 = 'assets/images/places/place_2.png';
+  static const String place3 = 'assets/images/places/place_3.png';
 
   // -- Animations --
   static const String productsIllustration =

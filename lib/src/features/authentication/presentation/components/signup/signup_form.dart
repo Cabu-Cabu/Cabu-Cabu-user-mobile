@@ -35,7 +35,7 @@ class SignupForm extends StatelessWidget {
             prefixIcon: Icon(Icons.lock_outline),
           ),
         ),
-        12.verticalSpace,
+        16.verticalSpace,
         const AppTermsAndConditionsCheckBox(),
         30.verticalSpace,
         SizedBox(

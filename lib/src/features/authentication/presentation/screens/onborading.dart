@@ -11,27 +11,24 @@ class OnboradingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Container(
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        alignment: Alignment.bottomCenter,
+        padding: EdgeInsets.all(AppSizes.defaultSpace).copyWith(
+          bottom: AppSizes.xxl,
+        ),
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(AppImages.onboardingImage),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: SizedBox(
           width: double.infinity,
-          height: double.infinity,
-          alignment: Alignment.bottomCenter,
-          padding: EdgeInsets.all(AppSizes.defaultSpace).copyWith(
-            bottom: AppSizes.xxl,
-          ),
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(AppImages.onboardingImage),
-              fit: BoxFit.cover,
-            ),
-          ),
-          child: SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: () =>
-                  context.pushAndRemoveUntil(const WelcomeScreen()),
-              child: const Text(AppTexts.getStarted),
-            ),
+          child: ElevatedButton(
+            onPressed: () => context.pushAndRemoveUntil(const WelcomeScreen()),
+            child: const Text(AppTexts.getStarted),
           ),
         ),
       ),
