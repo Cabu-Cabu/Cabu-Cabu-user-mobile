@@ -18,7 +18,7 @@ class AppRoundedContainer extends StatelessWidget {
     this.width,
     this.padding,
     this.height,
-    this.radius = AppSizes.cardRadiusLg,
+    this.radius = AppSizes.cardRadiusMd,
     this.color = AppColors.white,
     this.showBorder = false,
     this.borderColor = AppColors.darkGrey,

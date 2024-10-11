@@ -80,4 +80,12 @@ class AppTexts {
   // -- Home --
   static const String homeAppBarTitle = 'Welcome to our shop,';
   static const String homeAppBarSubtitle = 'Abdulbasit Akingbade';
+
+  // -- Available Ride --
+  static const String availableRideHeaderTitle = 'Ride Available';
+  static const String availableRideHeaderSubtitle = 'Pick a ride';
+
+  // -- Ride Confirmation --
+  static const String rideConfirmationHeaderTitle = 'Ride Confirmation';
+  static const String rideConfirmationHeaderSubtitle = 'Verify your ride';
 }

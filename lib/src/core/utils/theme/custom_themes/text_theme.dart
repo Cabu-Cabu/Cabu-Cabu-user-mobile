@@ -18,7 +18,7 @@ class AppTextTheme {
       titleSmall: const TextStyle().copyWith(
           fontSize: 16.0.sp, fontWeight: FontWeight.w400, color: Colors.black),
       bodyLarge: const TextStyle().copyWith(
-          fontSize: 14.0.sp, fontWeight: FontWeight.w500, color: Colors.black),
+          fontSize: 15.0.sp, fontWeight: FontWeight.w400, color: Colors.black),
       bodyMedium: const TextStyle().copyWith(
           fontSize: 14.0, fontWeight: FontWeight.w400, color: Colors.black),
       bodySmall: const TextStyle().copyWith(
