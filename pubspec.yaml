@@ -39,6 +39,7 @@ dependencies:
   shared_preferences: ^2.3.2
   flutter_svg: ^2.0.10+1
   sliding_up_panel: ^2.0.0+1
+  google_maps_flutter: ^2.9.0
 
 dev_dependencies:
   flutter_test:
