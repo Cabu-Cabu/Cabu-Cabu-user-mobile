@@ -1,4 +1,4 @@
-import 'package:cabu_cabu_user_mobile/src/utils/constants/colors.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class AppCheckBoxTheme {

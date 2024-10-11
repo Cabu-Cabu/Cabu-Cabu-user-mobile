@@ -1,8 +1,8 @@
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/image_strings.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/sizes.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/texts.dart';
 import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/screens/welcome_screen.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/constants/extentions.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/constants/image_strings.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/constants/sizes.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
 
 class OnboradingScreen extends StatelessWidget {

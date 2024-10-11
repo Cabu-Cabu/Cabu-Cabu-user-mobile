@@ -1,10 +1,10 @@
-import 'package:cabu_cabu_user_mobile/src/utils/constants/colors.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/theme/custom_themes/appbar_theme.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/theme/custom_themes/checkbox_theme.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/theme/custom_themes/elevated_button_theme.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/theme/custom_themes/outlined_button_theme.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/theme/custom_themes/text_field_theme.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/theme/custom_themes/text_theme.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/theme/custom_themes/appbar_theme.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/theme/custom_themes/checkbox_theme.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/theme/custom_themes/elevated_button_theme.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/theme/custom_themes/outlined_button_theme.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/theme/custom_themes/text_field_theme.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/theme/custom_themes/text_theme.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {

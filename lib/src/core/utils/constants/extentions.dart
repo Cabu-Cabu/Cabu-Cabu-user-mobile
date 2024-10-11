@@ -1,4 +1,4 @@
-import 'package:cabu_cabu_user_mobile/src/utils/device/device_utility.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
 extension ContextExtension on BuildContext {

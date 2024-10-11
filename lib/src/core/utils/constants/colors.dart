@@ -8,6 +8,8 @@ class AppColors {
   static const Color secondary = Color(0xFFE91E63);
   static const Color accent = Color(0xFF607D8B);
 
+  static const Color buttonBlue = Color(0xFF10BCDF);
+
   // Text colors
   static const Color textPrimary = Color(0xFF212121);
   static const Color textSecondary = Color(0xFF757575);

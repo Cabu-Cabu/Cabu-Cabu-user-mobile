@@ -1,10 +1,10 @@
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/texts.dart';
 import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/components/auth_action_text.dart';
 import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/components/form_divider.dart';
 import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/components/google_social_button.dart';
 import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/components/signup/signup_form.dart';
 import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/screens/login_screen.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/constants/extentions.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

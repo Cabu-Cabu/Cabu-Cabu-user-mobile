@@ -1,5 +1,5 @@
-import 'package:cabu_cabu_user_mobile/src/utils/constants/colors.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/constants/sizes.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

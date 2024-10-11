@@ -1,5 +1,5 @@
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/texts.dart';
 import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/components/signup/terms_conditions_checkbox.dart';
-import 'package:cabu_cabu_user_mobile/src/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
