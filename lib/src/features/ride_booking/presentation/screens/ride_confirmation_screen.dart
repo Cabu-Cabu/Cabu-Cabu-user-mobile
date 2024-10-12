@@ -63,22 +63,22 @@ class CarAndDriverImage extends StatelessWidget {
             topLeft: const Radius.circular(0),
           ),
           child: Image.asset(
-            AppImages.place2,
+            AppImages.car1,
             height: 0.25.sh,
             width: 1.sw,
             fit: BoxFit.cover,
           ),
         ),
         Positioned(
-          right: 1,
-          top: 1,
+          right: 0,
+          top: 0,
           child: AppRoundedContainer(
-            radius: 10,
+            radius: 20,
             showBorder: true,
             borderWidth: 1.5,
             borderColor: AppColors.primary,
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(20),
               child: Image.asset(
                 AppImages.person1,
                 height: 60,

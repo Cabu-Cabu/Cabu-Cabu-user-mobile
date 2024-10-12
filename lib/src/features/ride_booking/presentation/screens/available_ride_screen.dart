@@ -81,7 +81,7 @@ class AvailabeRideListTile extends StatelessWidget {
             AppImages.car7,
             AppImages.car8,
             AppImages.car9,
-          ][index % 3],
+          ][index % 9],
           width: 63,
           height: 61,
           fit: BoxFit.cover,

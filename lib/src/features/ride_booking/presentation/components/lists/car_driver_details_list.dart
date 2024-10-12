@@ -4,7 +4,7 @@ import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/icon_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class CarDriverDetailsList extends StatelessWidget {
   final bool isDriverDetails;
@@ -78,26 +78,21 @@ class DestinationDetails extends StatelessWidget {
           const DestinationRow(
             startPoint: 'Ajah',
             endPoint: 'Osborne road',
-            icon: Icons.radio_button_checked,
           ),
           Align(
             alignment: Alignment(0.65.w, 0),
             child: SvgPicture.asset(
               AppIcons.flight,
-              colorFilter: ColorFilter.mode(
-                AppColors.black.withOpacity(0.7),
-                BlendMode.srcIn,
-              ),
+              // colorFilter: ColorFilter.mode(
+              //   AppColors.black.withOpacity(0.7),
+              //   BlendMode.srcIn,
+              // ),
             ),
-            // Icon(
-            //   Icons.airplanemode_active,
-            //   color: AppColors.black.withOpacity(0.7),
-            // ),
           ),
           const DestinationRow(
             startPoint: 'Ikeja',
             endPoint: 'Third mainland',
-            icon: Icons.location_on_outlined,
+            isDestination: true,
           ),
         ],
       ),
@@ -109,13 +104,13 @@ class DestinationDetails extends StatelessWidget {
 class DestinationRow extends StatelessWidget {
   final String startPoint;
   final String endPoint;
-  final IconData icon;
+  final bool isDestination;
 
   const DestinationRow({
     super.key,
     required this.startPoint,
     required this.endPoint,
-    required this.icon,
+    this.isDestination = false,
   });
 
   @override
@@ -128,8 +123,11 @@ class DestinationRow extends StatelessWidget {
           child: Row(
             children: [
               Icon(
-                icon,
-                color: AppColors.black.withOpacity(0.7),
+                isDestination
+                    ? Icons.location_on_outlined
+                    : Icons.radio_button_checked,
+                size: 28,
+                color: AppColors.black.withOpacity(0.8),
               ),
               10.horizontalSpace,
               Text(
@@ -142,9 +140,15 @@ class DestinationRow extends StatelessWidget {
           ),
         ),
         Expanded(
-          child: Icon(
-            Icons.airplanemode_active,
-            color: AppColors.black.withOpacity(0.7),
+          child: SvgPicture.asset(
+            isDestination ? AppIcons.flightFrom : AppIcons.flightTo,
+            width: 30,
+            height: 30,
+            fit: BoxFit.scaleDown,
+            // colorFilter: ColorFilter.mode(
+            //   AppColors.black.withOpacity(0.7),
+            //   BlendMode.srcIn,
+            // ),
           ),
         ),
         Expanded(
@@ -186,16 +190,11 @@ class RideDetailsListTile extends StatelessWidget {
         width: 30,
         height: 30,
         fit: BoxFit.scaleDown,
-        colorFilter: ColorFilter.mode(
-          AppColors.black.withOpacity(0.7),
-          BlendMode.srcIn,
-        ),
+        // colorFilter: ColorFilter.mode(
+        //   AppColors.black.withOpacity(0.7),
+        //   BlendMode.srcIn,
+        // ),
       ),
-      // Icon(
-      //   icon,
-      //   size: 30,
-      //   color: AppColors.black.withOpacity(0.7),
-      // ),
       visualDensity: VisualDensity.compact,
       contentPadding: EdgeInsets.zero,
       titleAlignment: ListTileTitleAlignment.bottom,
