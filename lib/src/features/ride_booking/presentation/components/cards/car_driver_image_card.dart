@@ -4,8 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CarAndDriverImage extends StatelessWidget {
+  final bool showDriverImage;
+
   const CarAndDriverImage({
     super.key,
+    this.showDriverImage = true,
   });
 
   @override
@@ -23,17 +26,18 @@ class CarAndDriverImage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        const Positioned(
-          right: 0,
-          top: 0,
-          child: AppRoundedImage(
-            width: 60,
-            height: 60,
-            radius: 20,
-            showBorder: true,
-            image: AppImages.person1,
+        if (showDriverImage)
+          const Positioned(
+            right: 0,
+            top: 0,
+            child: AppRoundedImage(
+              width: 60,
+              height: 60,
+              radius: 20,
+              showBorder: true,
+              image: AppImages.person1,
+            ),
           ),
-        ),
       ],
     );
   }
