@@ -33,43 +33,9 @@ class BookVerifiedRideScreen extends StatelessWidget {
             Expanded(
               child: Column(
                 children: [
-                  const VehicleAndDriverImage(),
+                  const CarAndDriverImage(),
                   32.verticalSpace,
-                  SizedBox(
-                    height: 45,
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: OutlinedButton.icon(
-                            onPressed: () {},
-                            label: const Text('Message'),
-                            icon: const Icon(Icons.message),
-                            style: OutlinedButton.styleFrom(
-                              padding: EdgeInsets.zero,
-                              minimumSize: const Size(0, 45),
-                              foregroundColor: AppColors.primary,
-                              side: const BorderSide(
-                                color: AppColors.primary,
-                                width: 1.5,
-                              ),
-                            ),
-                          ),
-                        ),
-                        16.horizontalSpace,
-                        Expanded(
-                          child: ElevatedButton.icon(
-                            onPressed: () {},
-                            label: const Text('Call'),
-                            icon: const Icon(Icons.call),
-                            style: ElevatedButton.styleFrom(
-                              minimumSize: const Size(0, 45),
-                              padding: EdgeInsets.zero,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                  const MessageAndCallButtons(),
                   16.verticalSpace,
                   Expanded(
                     child: Center(
@@ -97,6 +63,51 @@ class BookVerifiedRideScreen extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class MessageAndCallButtons extends StatelessWidget {
+  const MessageAndCallButtons({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 45,
+      child: Row(
+        children: [
+          Expanded(
+            child: OutlinedButton.icon(
+              onPressed: () {},
+              label: const Text('Message'),
+              icon: const Icon(Icons.message),
+              style: OutlinedButton.styleFrom(
+                padding: EdgeInsets.zero,
+                minimumSize: const Size(0, 45),
+                foregroundColor: AppColors.primary,
+                side: const BorderSide(
+                  color: AppColors.primary,
+                  width: 1.5,
+                ),
+              ),
+            ),
+          ),
+          16.horizontalSpace,
+          Expanded(
+            child: ElevatedButton.icon(
+              onPressed: () {},
+              label: const Text('Call'),
+              icon: const Icon(Icons.call),
+              style: ElevatedButton.styleFrom(
+                minimumSize: const Size(0, 45),
+                padding: EdgeInsets.zero,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

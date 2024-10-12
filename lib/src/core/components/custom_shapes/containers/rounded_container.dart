@@ -3,9 +3,9 @@ import 'package:cabu_cabu_user_mobile/src/core/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class AppRoundedContainer extends StatelessWidget {
-  final double? width;
-  final double? height;
+  final double? width, height;
   final bool showBorder;
+  final double borderWidth;
   final Color color, borderColor;
   final EdgeInsetsGeometry? padding, margin;
   final BoxConstraints? constraints;
@@ -21,6 +21,7 @@ class AppRoundedContainer extends StatelessWidget {
     this.radius = AppSizes.cardRadiusMd,
     this.color = AppColors.white,
     this.showBorder = false,
+    this.borderWidth = 1.0,
     this.borderColor = AppColors.darkGrey,
     this.margin,
     this.constraints,
@@ -37,7 +38,9 @@ class AppRoundedContainer extends StatelessWidget {
       padding: padding ?? EdgeInsets.zero,
       decoration: BoxDecoration(
         color: color,
-        border: showBorder ? Border.all(color: borderColor) : null,
+        border: showBorder
+            ? Border.all(color: borderColor, width: borderWidth)
+            : null,
         borderRadius: BorderRadius.circular(radius),
       ),
       child: child,
