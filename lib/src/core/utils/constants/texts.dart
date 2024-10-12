@@ -78,4 +78,16 @@ class AppTexts {
   // Driver Details --
   static const String driverDetailsHeaderTitle = 'Mark Johnson';
   static const String driverDetailsHeaderSubtitle = 'View Driver';
+
+  // -- Personalization --
+  static const String paymentMethod = 'Payment Method';
+  static const String panicBtn = 'Panic Button';
+  static const String help = 'Help';
+
+  // -- Profile List Tiles --
+  static const String messages = 'Messages';
+  static const String notification = 'Notification';
+  static const String settings = 'Settings';
+  static const String security = 'Security';
+  static const String logout = 'Logout';
 }

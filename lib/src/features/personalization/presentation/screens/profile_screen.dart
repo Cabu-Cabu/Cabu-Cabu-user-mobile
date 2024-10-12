@@ -1,8 +1,13 @@
-import 'package:cabu_cabu_user_mobile/src/core/components/custom_shapes/images/rounded_image.dart';
+import 'package:cabu_cabu_user_mobile/src/core/components/tiles/custom_divide_tiles.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/image_strings.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/sizes.dart';
+import 'package:cabu_cabu_user_mobile/src/features/personalization/domain/enums/profile_list_tiles.dart';
+import 'package:cabu_cabu_user_mobile/src/features/personalization/presentation/components/header_section.dart';
+import 'package:cabu_cabu_user_mobile/src/features/personalization/presentation/components/profile/header_buttons.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -15,19 +20,34 @@ class ProfileScreen extends StatelessWidget {
           padding: const EdgeInsets.all(AppSizes.defaultPadding),
           child: Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Hello,\nMark',
-                    style: context.textTheme.headlineMedium,
-                  ),
-                  const AppRoundedImage(
-                    image: AppImages.person2,
-                    height: 50,
-                    width: 50,
-                  ),
-                ],
+              const PersonalizationScreenHeader(
+                title: 'Hello,\nMark',
+              ),
+              24.verticalSpace,
+              const ProfileHeaderActionButtons(),
+              20.verticalSpace,
+              CustomDivideTiles(
+                dividerIndent: 48.w,
+                spacing: 5.h,
+                tiles: ProfileListTile.values.map(
+                  (ProfileListTile tile) {
+                    return ListTile(
+                      leading: SvgPicture.asset(
+                        tile.icon,
+                        width: 24,
+                        height: 24,
+                        colorFilter: const ColorFilter.mode(
+                          AppColors.black,
+                          BlendMode.srcIn,
+                        ),
+                      ),
+                      title: Text(
+                        tile.title,
+                        style: context.textTheme.headlineSmall,
+                      ),
+                    );
+                  },
+                ).toList(),
               ),
             ],
           ),
