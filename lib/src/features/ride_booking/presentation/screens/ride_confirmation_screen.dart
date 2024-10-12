@@ -36,39 +36,7 @@ class RideConfirmationScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     8.verticalSpace,
-                    Stack(
-                      children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(20).copyWith(
-                            topLeft: const Radius.circular(0),
-                          ),
-                          child: Image.asset(
-                            AppImages.place2,
-                            height: 0.25.sh,
-                            width: 1.sw,
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                        Positioned(
-                          right: 1,
-                          top: 1,
-                          child: AppRoundedContainer(
-                            radius: 10,
-                            showBorder: true,
-                            borderColor: AppColors.primary,
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(10),
-                              child: Image.asset(
-                                AppImages.place2,
-                                height: 60,
-                                width: 60,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                    const VehicleAndDriverImage(),
                     32.verticalSpace,
                     CustomDivideTiles(
                       dividerIndent: 42.w,
@@ -116,6 +84,49 @@ class RideConfirmationScreen extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class VehicleAndDriverImage extends StatelessWidget {
+  const VehicleAndDriverImage({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        ClipRRect(
+          borderRadius: BorderRadius.circular(20).copyWith(
+            topLeft: const Radius.circular(0),
+          ),
+          child: Image.asset(
+            AppImages.place2,
+            height: 0.25.sh,
+            width: 1.sw,
+            fit: BoxFit.fill,
+          ),
+        ),
+        Positioned(
+          right: 1,
+          top: 1,
+          child: AppRoundedContainer(
+            radius: 10,
+            showBorder: true,
+            borderColor: AppColors.primary,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: Image.asset(
+                AppImages.place2,
+                height: 60,
+                width: 60,
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
