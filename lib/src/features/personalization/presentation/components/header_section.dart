@@ -23,7 +23,7 @@ class PersonalizationScreenHeader extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Hello,\nMark',
+              title,
               style: context.textTheme.headlineMedium,
             ),
             if (subtitle != null)
