@@ -62,20 +62,6 @@ class AppTexts {
 
   // -- Authentication Headings Text
   static const String forgotPasswordTitle = 'FORGOT PASSWORD';
-  static const String forgotPasswordSubTitle =
-      'Don\'t worry sometimes people can forget too, enter your email and we will send you a password reset link.';
-  static const String changeYourPasswordTitle = 'Password Reset Email Sent';
-  static const String changeYourPasswordSubTitle =
-      'Your Account Security is Our Priority! We\'ve Sent You a Secure Link To Safely Change Password And Keep Your Account Protected.';
-  static const String confirmEmail = 'Verify your email address!';
-  static const String confirmEmailSubTitle =
-      'Congratulations! Your Account Awaits: Verify Your Email To Start Shooping and Experience a World of Unrivaled Deals and Personalized Offers.';
-  static const String emailNotReceivedMessage =
-      'Didn\'t get the email? Check your junk/spam or resend it.';
-  static const String yourAccountCreatedTitle =
-      'Your account is successfully created!';
-  static const String yourAccountCreatedSubTitle =
-      'Welcome to your Ultimate Shopping Destination: Your Account is Craeted, Unleash the Joy of Seamless Online Shopping!';
 
   // -- Home --
   static const String homeAppBarTitle = 'Welcome to our shop,';
@@ -88,4 +74,8 @@ class AppTexts {
   // -- Ride Confirmation --
   static const String rideConfirmationHeaderTitle = 'Ride Confirmation';
   static const String rideConfirmationHeaderSubtitle = 'Verify your ride';
+
+  // Driver Details --
+  static const String driverDetailsHeaderTitle = 'Mark Johnson';
+  static const String driverDetailsHeaderSubtitle = 'View Driver';
 }

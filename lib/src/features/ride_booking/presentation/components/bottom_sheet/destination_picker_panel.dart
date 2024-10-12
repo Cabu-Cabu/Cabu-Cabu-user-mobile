@@ -2,7 +2,7 @@ import 'package:cabu_cabu_user_mobile/src/core/components/custom_shapes/containe
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/icon_strings.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/image_strings.dart';
-import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/components/bottom_sheet/panel_search_bar_header.dart';
+import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/components/bottom_sheet/destination_picker_search_header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -33,7 +33,7 @@ class DestinationPickerPanel extends StatelessWidget {
             radius: 10.0,
           ),
           16.verticalSpace,
-          const PanelSearchBarHeader(),
+          const DestinationPickerSearchHeader(),
           12.verticalSpace,
           ListView.separated(
             itemCount: 3,

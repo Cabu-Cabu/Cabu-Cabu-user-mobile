@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-class PanelSearchBarHeader extends StatelessWidget {
-  const PanelSearchBarHeader({
+class DestinationPickerSearchHeader extends StatelessWidget {
+  const DestinationPickerSearchHeader({
     super.key,
   });
 

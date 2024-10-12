@@ -8,7 +8,7 @@ class AppTextTheme {
       headlineLarge: const TextStyle().copyWith(
           fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black),
       headlineMedium: const TextStyle().copyWith(
-          fontSize: 24.sp, fontWeight: FontWeight.w600, color: Colors.black),
+          fontSize: 24, fontWeight: FontWeight.w600, color: Colors.black),
       headlineSmall: const TextStyle().copyWith(
           fontSize: 18.sp, fontWeight: FontWeight.w400, color: Colors.black),
       titleLarge: const TextStyle().copyWith(

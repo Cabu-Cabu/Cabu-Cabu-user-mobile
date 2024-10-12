@@ -190,10 +190,10 @@ class RideDetailsListTile extends StatelessWidget {
         width: 30,
         height: 30,
         fit: BoxFit.scaleDown,
-        // colorFilter: ColorFilter.mode(
-        //   AppColors.black.withOpacity(0.7),
-        //   BlendMode.srcIn,
-        // ),
+        colorFilter: ColorFilter.mode(
+          AppColors.black.withOpacity(0.8),
+          BlendMode.srcIn,
+        ),
       ),
       visualDensity: VisualDensity.compact,
       contentPadding: EdgeInsets.zero,
