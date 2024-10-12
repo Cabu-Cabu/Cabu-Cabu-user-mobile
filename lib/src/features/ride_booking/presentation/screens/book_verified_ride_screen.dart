@@ -1,10 +1,12 @@
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/icon_strings.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/texts.dart';
+import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/components/cards/car_driver_image_card.dart';
 import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/components/texts/ride_booking_header_texts.dart';
-import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/screens/ride_confirmation_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 
 class BookVerifiedRideScreen extends StatelessWidget {
   const BookVerifiedRideScreen({super.key});
@@ -83,7 +85,7 @@ class MessageAndCallButtons extends StatelessWidget {
             child: OutlinedButton.icon(
               onPressed: () {},
               label: const Text('Message'),
-              icon: const Icon(Icons.message),
+              icon: SvgPicture.asset(AppIcons.message),
               style: OutlinedButton.styleFrom(
                 padding: EdgeInsets.zero,
                 minimumSize: const Size(0, 45),
@@ -100,7 +102,7 @@ class MessageAndCallButtons extends StatelessWidget {
             child: ElevatedButton.icon(
               onPressed: () {},
               label: const Text('Call'),
-              icon: const Icon(Icons.call),
+              icon: SvgPicture.asset(AppIcons.call),
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size(0, 45),
                 padding: EdgeInsets.zero,
