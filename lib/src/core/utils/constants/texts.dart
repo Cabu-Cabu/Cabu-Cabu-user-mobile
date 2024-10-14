@@ -41,8 +41,10 @@ class AppTexts {
   static const String verify = 'Verify';
   static const String emailAddress = 'Cabu-Cabu@express.com';
 
+  static const String resetPassword = 'Reset Password';
   static const String newPassword = 'New password';
   static const String reEnterPassword = 'Re-enter password';
+  static const String currentPassword = 'Enter current password';
   static const String confirm = 'Confirm';
 
   static const String name = 'Name';
@@ -90,4 +92,7 @@ class AppTexts {
   static const String settings = 'Settings';
   static const String security = 'Security';
   static const String logout = 'Logout';
+
+  static const String chats = 'Chats';
+  static const String search = 'Search';
 }
