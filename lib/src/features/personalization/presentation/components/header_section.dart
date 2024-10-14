@@ -24,11 +24,13 @@ class PersonalizationScreenHeader extends StatelessWidget {
           children: [
             Text(
               title,
+              overflow: TextOverflow.ellipsis,
               style: context.textTheme.headlineMedium,
             ),
             if (subtitle != null)
               Text(
                 subtitle!,
+                overflow: TextOverflow.ellipsis,
                 style: context.textTheme.bodyLarge?.copyWith(
                   color: AppColors.opacBlack,
                 ),

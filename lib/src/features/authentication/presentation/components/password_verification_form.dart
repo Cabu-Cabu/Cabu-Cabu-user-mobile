@@ -13,7 +13,7 @@ class PasswordVerificationForm extends StatelessWidget {
       children: [
         TextFormField(
           decoration: const InputDecoration(
-            hintText: AppTexts.emailAddress,
+            hintText: AppTexts.testEmail,
             prefixIcon: Icon(Icons.email_outlined),
           ),
         ),

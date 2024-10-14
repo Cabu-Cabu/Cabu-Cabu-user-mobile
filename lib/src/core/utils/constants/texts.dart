@@ -39,7 +39,7 @@ class AppTexts {
 
   static const String verificationCode = 'Verification code';
   static const String verify = 'Verify';
-  static const String emailAddress = 'Cabu-Cabu@express.com';
+  static const String testEmail = 'Cabu-Cabu@express.com';
 
   static const String resetPassword = 'Reset Password';
   static const String newPassword = 'New password';
@@ -95,4 +95,20 @@ class AppTexts {
 
   static const String chats = 'Chats';
   static const String search = 'Search';
+
+  // -- Settings List Tiles --
+  static const String emailAddress = 'Email Address';
+  static const String language = 'Language';
+  static const String sound = 'Sound';
+  static const String darkMode = 'Dark Mode';
+  static const String changeNumber = 'Change Number';
+  static const String update = 'Update';
+  static const String deleteAccount = 'Delete Account';
+
+  // -- Change Number --
+  static const String changeNumberTitle = 'Change Phone Number';
+  static const String testCountryCode = '+234';
+  static const String testPhoneNumber = '812 3456 789';
+  static const String sendCode = 'Send\nCode';
+  static const String reEnterPhoneNumber = 'Re-enter phone number';
 }
