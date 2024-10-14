@@ -6,8 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-class PhoneNumberChangedSuccessScreen extends StatelessWidget {
-  const PhoneNumberChangedSuccessScreen({super.key});
+class UpdateSuccessfulScreen extends StatelessWidget {
+  final String text;
+  final VoidCallback? onBtnPressed;
+
+  const UpdateSuccessfulScreen(
+      {super.key, required this.text, this.onBtnPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +38,7 @@ class PhoneNumberChangedSuccessScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: onBtnPressed,
                   child: Text(AppTexts.okay),
                 ),
               ),
