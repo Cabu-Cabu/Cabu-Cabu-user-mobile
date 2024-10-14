@@ -3,6 +3,7 @@ import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/icon_strings.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/sizes.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/texts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -16,7 +17,7 @@ class AppSearchContainer extends StatelessWidget {
 
   const AppSearchContainer({
     super.key,
-    required this.text,
+    this.text = AppTexts.search,
     this.icon = AppIcons.search,
     this.padding = const EdgeInsets.symmetric(horizontal: 0),
     this.showBackground = false,
@@ -33,11 +34,12 @@ class AppSearchContainer extends StatelessWidget {
         padding: padding,
         child: AppRoundedContainer(
           width: double.infinity,
-          height: 56,
-          radius: AppSizes.cardRadiusLg,
-          padding: const EdgeInsets.all(AppSizes.md),
+          height: 48,
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppSizes.md,
+          ),
           showBorder: showBorder,
-          borderColor: AppColors.grey,
+          borderColor: AppColors.opacBlack,
           color: showBackground
               ? dark
                   ? AppColors.dark
@@ -48,7 +50,7 @@ class AppSearchContainer extends StatelessWidget {
               SvgPicture.asset(
                 icon,
                 colorFilter: ColorFilter.mode(
-                  dark ? AppColors.lightGrey : AppColors.darkerGrey,
+                  dark ? AppColors.lightGrey : AppColors.opacBlack,
                   BlendMode.srcIn,
                 ),
               ),
@@ -56,7 +58,7 @@ class AppSearchContainer extends StatelessWidget {
               Text(
                 text,
                 style: context.textTheme.bodySmall?.copyWith(
-                  color: dark ? AppColors.lightGrey : AppColors.darkerGrey,
+                  color: dark ? AppColors.lightGrey : AppColors.opacBlack,
                 ),
               ),
             ],
