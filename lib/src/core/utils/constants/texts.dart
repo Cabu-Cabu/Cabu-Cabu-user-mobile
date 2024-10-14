@@ -118,4 +118,20 @@ class AppTexts {
 
   // -- Change Email Address --
   static const String changeEmailTitle = 'Change Email Address';
+
+  // -- Delete Account --
+  static const String deleteAccountTitle = 'Delete Account';
+  static const String deleteAccountDescription =
+      '''To confirm this is your account
+and you will like to delete.  
+      
+Kindly verify your email address
+      
+Email: Markowoje@cabu-cabuE.com''';
+  static const String sendDeleteCode = 'Send Code';
+  static const String emailToDelete = 'Email: ';
+  static const String deleteAccountBtn = 'Delete account';
+  static const String cancel = 'Cancel';
+  static const String deleteOrCancelText =
+      'You are about to delete your account as a user';
 }
