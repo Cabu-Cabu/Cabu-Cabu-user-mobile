@@ -35,10 +35,9 @@ class PersonalizationScreenHeader extends StatelessWidget {
               ),
           ],
         ),
-        const AppRoundedImage(
+        AppRoundedImage.square(
           image: AppImages.person2,
-          height: 50,
-          width: 50,
+          size: 50,
         ),
       ],
     );
