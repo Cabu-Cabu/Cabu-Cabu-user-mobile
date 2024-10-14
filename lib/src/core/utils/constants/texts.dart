@@ -110,5 +110,8 @@ class AppTexts {
   static const String testCountryCode = '+234';
   static const String testPhoneNumber = '812 3456 789';
   static const String sendCode = 'Send\nCode';
+  static const String okay = 'Okay';
   static const String reEnterPhoneNumber = 'Re-enter phone number';
+  static const String phoneNumberChangedSuccess =
+      'Phone number changed successfully';
 }
