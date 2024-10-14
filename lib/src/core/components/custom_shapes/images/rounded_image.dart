@@ -20,9 +20,27 @@ class AppRoundedImage extends StatelessWidget {
     this.borderColor = AppColors.primary,
   });
 
+  factory AppRoundedImage.square({
+    required String image,
+    required double size,
+    double radius = 10,
+    bool showBorder = false,
+    Color borderColor = AppColors.primary,
+  }) =>
+      AppRoundedImage(
+        image: image,
+        height: size,
+        width: size,
+        radius: radius,
+        showBorder: showBorder,
+        borderColor: borderColor,
+      );
+
   @override
   Widget build(BuildContext context) {
     return AppRoundedContainer(
+      width: width,
+      height: height,
       radius: radius,
       showBorder: showBorder,
       borderWidth: 1.5,
