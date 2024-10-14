@@ -35,6 +35,7 @@ class AppTexts {
 
   // -- Forgot Password --
   static const String enterEmail = 'Enter your email address';
+  static const String reEnterEmail = 'Re-enter email address';
   static const String verifyEmail = 'Verify email';
 
   static const String verificationCode = 'Verification code';
@@ -114,4 +115,7 @@ class AppTexts {
   static const String reEnterPhoneNumber = 'Re-enter phone number';
   static const String phoneNumberChangedSuccess =
       'Phone number changed successfully';
+
+  // -- Change Email Address --
+  static const String changeEmailTitle = 'Change Email Address';
 }
