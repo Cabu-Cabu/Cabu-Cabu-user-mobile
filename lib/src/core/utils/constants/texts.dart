@@ -134,4 +134,11 @@ Email: Markowoje@cabu-cabuE.com''';
   static const String cancel = 'Cancel';
   static const String deleteOrCancelText =
       'You are about to delete your account as a user';
+
+  // -- Update --
+  static const String updateTitle = 'Update';
+  static const String autoUpdate = 'Auto-update';
+  static const String updateOverWifi = 'Automatically update over Wi-Fi';
+  static const String updateNotification =
+      'Get notified when updates are available';
 }
