@@ -1,4 +1,4 @@
-import 'package:cabu_cabu_user_mobile/src/core/components/custom_shapes/containers/rounded_container.dart';
+import 'package:cabu_cabu_user_mobile/src/core/components/buttons/rounded_icon_button.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/image_strings.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/texts.dart';
@@ -87,17 +87,10 @@ class AvailabeRideListTile extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
-      trailing: const AppRoundedContainer(
-        width: 40,
-        height: 40,
+      trailing: AppRoundedIconButton(
         showBorder: true,
-        borderWidth: 1.5,
-        borderColor: AppColors.primary,
-        child: Icon(
-          Icons.arrow_forward_ios,
-          size: 10,
-          color: AppColors.primary,
-        ),
+        backgroundColor: AppColors.primary,
+        iconColor: AppColors.primary,
       ),
       subtitle: Column(
         mainAxisSize: MainAxisSize.min,
