@@ -89,7 +89,7 @@ class AppTexts {
 
   // -- Profile List Tiles --
   static const String messages = 'Messages';
-  static const String notification = 'Notification';
+  static const String notification = 'Notifications';
   static const String settings = 'Settings';
   static const String security = 'Security';
   static const String logout = 'Logout';
