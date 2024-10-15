@@ -22,19 +22,21 @@ class NotificationsScreen extends StatelessWidget {
         child: Column(
           children: [
             const PersonalizationScreenHeader(title: AppTexts.notification),
-            18.verticalSpace,
+            40.verticalSpace,
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
                   children: [
                     CustomDivideTiles(
-                      dividerIndent: 32.w,
+                      dividerIndent: 45.w,
                       spacing: 6,
                       tiles: List.generate(3, (index) {
                         return ListTile(
                           title: Text('Payment successful'),
                           // titleTextStyle: context.textTheme.headlineSmall,
-                          contentPadding: EdgeInsets.zero,
+                          contentPadding: EdgeInsets.symmetric(
+                            horizontal: 8.w,
+                          ),
                           leading: SvgPicture.asset(
                             AppIcons.notification,
                             width: 24,
