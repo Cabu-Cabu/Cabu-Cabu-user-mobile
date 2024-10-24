@@ -2,6 +2,9 @@ import 'package:cabu_cabu_user_mobile/src/core/components/custom_shapes/containe
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/image_strings.dart';
+import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/screens/booked_ride_info_screen.dart';
+import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/screens/view_other_riders_screen.dart';
+import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/screens/view_ride_location_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,31 +21,40 @@ class RideBookingHomeCards extends StatelessWidget {
           height: 152.h,
           child: Row(
             children: [
-              const Expanded(
-                child: HomeCard(
-                  image: AppImages.home1,
-                  title: 'Ride',
-                  btnText: 'Location',
+              Expanded(
+                child: GestureDetector(
+                  onTap: () => context.push(ViewRideLocationScreen()),
+                  child: HomeCard(
+                    image: AppImages.home1,
+                    title: 'Ride',
+                    btnText: 'Location',
+                  ),
                 ),
               ),
               12.horizontalSpace,
-              const Expanded(
-                child: HomeCard(
-                  image: AppImages.home2,
-                  title: 'Ride',
-                  btnText: 'View',
+              Expanded(
+                child: GestureDetector(
+                  onTap: () => context.push(ViewBookedRideInfoScreen()),
+                  child: HomeCard(
+                    image: AppImages.home2,
+                    title: 'Ride',
+                    btnText: 'View',
+                  ),
                 ),
               ),
             ],
           ),
         ),
         23.verticalSpace,
-        SizedBox(
-          height: 152.h,
-          child: const HomeCard(
-            image: AppImages.home3,
-            title: 'View',
-            btnText: 'Other riders',
+        GestureDetector(
+          onTap: () => context.push(ViewOtherRidersScreen()),
+          child: SizedBox(
+            height: 152.h,
+            child: const HomeCard(
+              image: AppImages.home3,
+              title: 'View',
+              btnText: 'Other riders',
+            ),
           ),
         ),
       ],

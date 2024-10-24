@@ -4,6 +4,7 @@ import 'package:cabu_cabu_user_mobile/src/core/utils/constants/icon_strings.dart
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/texts.dart';
 import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/components/cards/car_driver_image_card.dart';
 import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/components/texts/ride_booking_header_texts.dart';
+import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/screens/ride_booked_successful_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -18,7 +19,7 @@ class BookVerifiedRideScreen extends StatelessWidget {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () => context.push(RideBookedSuccessfulScreen()),
           child: const Text('Book Ride'),
         ),
       ),

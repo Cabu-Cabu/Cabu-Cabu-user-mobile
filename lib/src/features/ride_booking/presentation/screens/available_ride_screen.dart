@@ -1,8 +1,10 @@
 import 'package:cabu_cabu_user_mobile/src/core/components/buttons/rounded_icon_button.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/image_strings.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/texts.dart';
 import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/components/texts/ride_booking_header_texts.dart';
+import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/screens/ride_confirmation_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -43,7 +45,10 @@ class AvailableRideScreen extends StatelessWidget {
                   color: AppColors.opacBlack,
                 ),
                 itemBuilder: (_, int index) {
-                  return AvailabeRideListTile(index: index);
+                  return AvailabeRideListTile(
+                    index: index,
+                    onTap: () => context.push(RideConfirmationScreen()),
+                  );
                 },
               ),
             ),
@@ -56,9 +61,11 @@ class AvailableRideScreen extends StatelessWidget {
 
 class AvailabeRideListTile extends StatelessWidget {
   final int index;
+  final VoidCallback onTap;
   const AvailabeRideListTile({
     super.key,
     required this.index,
+    required this.onTap,
   });
 
   @override
@@ -89,8 +96,9 @@ class AvailabeRideListTile extends StatelessWidget {
       ),
       trailing: AppRoundedIconButton(
         showBorder: true,
-        backgroundColor: AppColors.primary,
         iconColor: AppColors.primary,
+        backgroundColor: AppColors.primary,
+        onTap: onTap,
       ),
       subtitle: Column(
         mainAxisSize: MainAxisSize.min,

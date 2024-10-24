@@ -78,6 +78,17 @@ class AppTexts {
   static const String rideConfirmationHeaderTitle = 'Ride Confirmation';
   static const String rideConfirmationHeaderSubtitle = 'Verify your ride';
 
+  // -- View Booked Ride Info --
+  static const String bookedRideInfoTitle = 'Your Ride';
+  static const String bookedRideInfoSubtitle = 'View your ride';
+
+  // -- Past Activity --
+  static const String pastActivityTitle = 'Activity';
+  static const String pastActivitySubtitle = 'Past';
+
+  // -- View Ride Details --
+  static const String viewRideLocation = 'View ride location';
+
   // Driver Details --
   static const String driverDetailsHeaderTitle = 'Mark Johnson';
   static const String driverDetailsHeaderSubtitle = 'View Driver';

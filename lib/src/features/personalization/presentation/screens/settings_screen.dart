@@ -71,7 +71,7 @@ class SettingListTile extends StatelessWidget {
               onChanged: (value) {},
             )
           : null,
-      onTap: tile.onTap,
+      onTap: tile.screen != null ? () => context.push(tile.screen!) : null,
     );
   }
 }

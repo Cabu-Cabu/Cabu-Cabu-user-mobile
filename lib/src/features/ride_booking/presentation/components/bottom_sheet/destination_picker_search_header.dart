@@ -2,6 +2,7 @@ import 'package:cabu_cabu_user_mobile/src/core/components/custom_shapes/containe
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/icon_strings.dart';
+import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/screens/ride_destination_picker_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -40,7 +41,7 @@ class DestinationPickerSearchHeader extends StatelessWidget {
           ),
           4.horizontalSpace,
           ElevatedButton.icon(
-            onPressed: () {},
+            onPressed: () => context.push(RideDestinationPickerScreen()),
             label: const Text('View'),
             icon: SvgPicture.asset(AppIcons.group),
             style: ElevatedButton.styleFrom(

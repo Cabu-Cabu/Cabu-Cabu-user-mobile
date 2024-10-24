@@ -1,4 +1,6 @@
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
 import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/components/cards/car_driver_image_card.dart';
+import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/screens/bottom_nav_bar/dashboard_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -28,7 +30,7 @@ class RideBookedSuccessfulScreen extends StatelessWidget {
               SizedBox(
                 width: 1.sw,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => context.push(DashboardScreen()),
                   // child: const Text('Track Ride'),
                   child: const Text('Okay'),
                 ),

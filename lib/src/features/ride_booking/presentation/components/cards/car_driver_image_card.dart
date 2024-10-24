@@ -1,5 +1,7 @@
 import 'package:cabu_cabu_user_mobile/src/core/components/custom_shapes/images/rounded_image.dart';
+import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
 import 'package:cabu_cabu_user_mobile/src/core/utils/constants/image_strings.dart';
+import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/components/bottom_sheet/driver_info_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -27,15 +29,18 @@ class CarAndDriverImage extends StatelessWidget {
           ),
         ),
         if (showDriverImage)
-          const Positioned(
+          Positioned(
             right: 0,
             top: 0,
-            child: AppRoundedImage(
-              width: 60,
-              height: 60,
-              radius: 20,
-              showBorder: true,
-              image: AppImages.person1,
+            child: GestureDetector(
+              onTap: () => context.push(DriverInfoSheet()),
+              child: AppRoundedImage(
+                width: 60,
+                height: 60,
+                radius: 20,
+                showBorder: true,
+                image: AppImages.person1,
+              ),
             ),
           ),
       ],

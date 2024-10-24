@@ -18,16 +18,20 @@ class AppRoundedIconButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const AppRoundedContainer(
+    return AppRoundedContainer(
       width: 40,
       height: 40,
       showBorder: true,
       borderWidth: 1.5,
-      borderColor: AppColors.primary,
-      child: Icon(
-        Icons.arrow_forward_ios,
-        size: 10,
-        color: AppColors.primary,
+      color: showBorder ? AppColors.white : backgroundColor,
+      borderColor: backgroundColor,
+      child: IconButton(
+        icon: Icon(
+          Icons.arrow_forward_ios,
+          color: iconColor,
+        ),
+        iconSize: 10,
+        onPressed: onTap,
       ),
     );
   }

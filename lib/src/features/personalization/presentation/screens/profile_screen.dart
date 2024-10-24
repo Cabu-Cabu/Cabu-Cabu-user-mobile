@@ -41,6 +41,7 @@ class ProfileScreen extends StatelessWidget {
                           BlendMode.srcIn,
                         ),
                       ),
+                      onTap: () => context.push(tile.screen),
                       title: Text(
                         tile.title,
                         style: context.textTheme.headlineSmall,
