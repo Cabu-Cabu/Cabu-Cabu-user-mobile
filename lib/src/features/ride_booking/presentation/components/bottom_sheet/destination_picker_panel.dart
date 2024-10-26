@@ -1,7 +1,7 @@
-import 'package:cabu_cabu_user_mobile/src/core/components/custom_shapes/containers/rounded_container.dart';
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/icon_strings.dart';
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/image_strings.dart';
+import 'package:cabu_cabu_user_mobile/core/components/custom_shapes/containers/rounded_container.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/colors.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/icon_strings.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/image_strings.dart';
 import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/components/bottom_sheet/destination_picker_search_header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

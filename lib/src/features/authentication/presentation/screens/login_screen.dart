@@ -1,5 +1,5 @@
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/texts.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/extentions.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/texts.dart';
 import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/components/form_divider.dart';
 import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/components/google_social_button.dart';
 import 'package:cabu_cabu_user_mobile/src/features/authentication/presentation/components/signin_form.dart';

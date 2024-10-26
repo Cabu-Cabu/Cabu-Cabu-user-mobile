@@ -1,5 +1,5 @@
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/colors.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/extentions.dart';
 import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/screens/available_ride_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

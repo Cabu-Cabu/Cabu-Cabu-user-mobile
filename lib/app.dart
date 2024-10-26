@@ -1,5 +1,6 @@
 import 'package:cabu_cabu_user_mobile/app_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -7,6 +8,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const AppView();
+    return ProviderScope(child: const AppView());
   }
 }

@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/texts.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/texts.dart';
 
 enum UpdatesListTilesEnum {
   updateOverWifi(

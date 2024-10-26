@@ -1,5 +1,5 @@
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/icon_strings.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/colors.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/icon_strings.dart';
 import 'package:cabu_cabu_user_mobile/src/features/personalization/presentation/screens/profile_screen.dart';
 import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/screens/past_activity_screen.dart';
 import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/screens/ride_booking_screen.dart';

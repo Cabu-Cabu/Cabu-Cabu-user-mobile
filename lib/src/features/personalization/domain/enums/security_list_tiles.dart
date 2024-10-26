@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/icon_strings.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/icon_strings.dart';
 
 enum SecurityListTilesEnum {
   resetPassword(

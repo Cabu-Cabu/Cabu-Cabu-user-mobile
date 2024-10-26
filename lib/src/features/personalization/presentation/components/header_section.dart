@@ -1,7 +1,7 @@
-import 'package:cabu_cabu_user_mobile/src/core/components/custom_shapes/images/rounded_image.dart';
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/image_strings.dart';
+import 'package:cabu_cabu_user_mobile/core/components/custom_shapes/images/rounded_image.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/colors.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/extentions.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 
 class PersonalizationScreenHeader extends StatelessWidget {

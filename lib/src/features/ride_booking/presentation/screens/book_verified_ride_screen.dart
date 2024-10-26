@@ -1,7 +1,7 @@
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/colors.dart';
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/extentions.dart';
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/icon_strings.dart';
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/texts.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/colors.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/extentions.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/icon_strings.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/texts.dart';
 import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/components/cards/car_driver_image_card.dart';
 import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/components/texts/ride_booking_header_texts.dart';
 import 'package:cabu_cabu_user_mobile/src/features/ride_booking/presentation/screens/ride_booked_successful_screen.dart';

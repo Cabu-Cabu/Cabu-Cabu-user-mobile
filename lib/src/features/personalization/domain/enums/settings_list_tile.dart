@@ -1,4 +1,4 @@
-import 'package:cabu_cabu_user_mobile/src/core/utils/constants/icon_strings.dart';
+import 'package:cabu_cabu_user_mobile/core/utils/constants/icon_strings.dart';
 import 'package:cabu_cabu_user_mobile/src/features/personalization/presentation/screens/change_email_address_screen.dart';
 import 'package:cabu_cabu_user_mobile/src/features/personalization/presentation/screens/change_phone_number_screen.dart';
 import 'package:cabu_cabu_user_mobile/src/features/personalization/presentation/screens/delete_account_screen.dart';
